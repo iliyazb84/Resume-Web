@@ -1,0 +1,169 @@
+* {
+  caret-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 80px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.sidebar h2 {
+  color: #00bfff;
+  margin-bottom: 40px;
+}
+
+.sidebar i {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.profile {
+  width: 40%;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 100%;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.profile h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.profile p {
+  color: #00bfff;
+  margin-bottom: 20px;
+}
+
+.profile .socials i {
+  margin: 0 10px;
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  background-color: #1c1c1c;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.content h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.content .meta {
+  color: #00bfff;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.content p.description {
+  color: #ccc;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.skills-section h3 {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.skill-bar {
+  height: 6px;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background-color: #00bfff;
+}
+
+.particle {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: float 10s linear infinite;
+}
+
+.contact-button {
+  margin-top: 15px;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: solid 4px black;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: #00bfff;
+}
+
+/* Baraye Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
